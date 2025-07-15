@@ -256,7 +256,7 @@ def analyze_results(results, objective_name):
 # 6. ESTADÍSTICOS DESCRIPTIVOS
 # =============================================================================
 
-def mostrar_estadisticos_descriptivos(df):
+def mostrar_estadisticos_descriptivos():
     
     df = pd.read_csv('train.csv')
     
@@ -578,7 +578,7 @@ if __name__ == "__main__":
     
     print("\n EXPERIMENTO COMPLETADO")
     
-    mostrar_estadisticos_descriptivos(df)
+    mostrar_estadisticos_descriptivos()
     # Mostrar las tablas de resultados
     print_performance_table(rf_summary)
 
